@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@gmail.com",
-      "phone": "1234567890",
-      "address": {
-        "street": "123 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001"
-      }
-    },
-    {
       "id": 2,
       "name": "Jane Doe",
       "email": "janedoe@gmail.com",
@@ -47,6 +35,30 @@
         "state": "NY",
         "zip": "10001"
       }
+    },
+    {
+      "name": "Suman",
+      "email": "suman@yahoo.co.in",
+      "phone": "12123213434",
+      "id": 7
+    },
+    {
+      "name": "Terry",
+      "email": "atuny0@sohu.com",
+      "phone": "+63 791 675 8914",
+      "id": 8
+    },
+    {
+      "name": "Sheldon",
+      "email": "hbingley1@plala.or.jp",
+      "phone": "+7 813 117 7139",
+      "id": 9
+    },
+    {
+      "name": "Terrill",
+      "email": "rshawe2@51.la",
+      "phone": "+63 739 292 7942",
+      "id": 10
     }
   ]
 }

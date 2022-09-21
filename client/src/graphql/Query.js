@@ -10,3 +10,12 @@ export const LOAD_USERS = gql`
     }
   }
 `;
+
+export const GET_ALL_ALBUMS = gql`
+  query GetAllAlbum {
+    albums {
+      id
+      title
+    }
+  }
+`;

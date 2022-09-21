@@ -14,4 +14,15 @@ module.exports = {
       return dataSources.userAPI.getUser(id);
     },
   },
+  Mutation: {
+    createUser: async (_, { input }, { dataSources }) => {
+      return dataSources.userAPI.createUser(input);
+    },
+    updateUserName: async (_, { id, input }, { dataSources }) => {
+      return dataSources.userAPI.updateUser(id, input);
+    },
+    deleteUser: async (_, { id }, { dataSources }) => {
+      return dataSources.userAPI.deleteUser(id);
+    },
+  },
 };

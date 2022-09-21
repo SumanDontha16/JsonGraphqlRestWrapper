@@ -1,0 +1,59 @@
+query GetAllAlbum {
+  albums {
+    id
+    title
+  }
+}
+
+query GetAllUsers {
+  users {
+    id
+    name
+    email
+    phone
+  }
+}
+
+mutation CreateUser($input: CreateUserInput) {
+  createUser(input: $input) {
+    name
+    email
+    phone
+  }
+}
+
+mutation UpdateUserName($updateUserNameInput2: UpdateUserInput) {
+  updateUserName(input: $updateUserNameInput2) {
+    id
+    name
+    email
+  }
+}
+
+mutation($deleteUserId: ID!) {
+  deleteUser(id: $deleteUserId) {
+    id
+  }
+}
+
+----------------------------
+Variables:
+---------------------------
+{
+  "input": {
+    "name": "Terrill",
+    "email": "rshawe2@51.la",
+    "phone": "+63 739 292 7942"
+  },
+  "updateUserInput": {
+    "id": 7,
+    "name": "test",
+    "email": "test@test.com"
+  },
+  "updateUserNameInput2": {
+    "id": 7,
+    "name": "Testttt",
+    "email": "tetfat@jfdgjk.com"
+  },
+  "deleteUserId": 8
+}

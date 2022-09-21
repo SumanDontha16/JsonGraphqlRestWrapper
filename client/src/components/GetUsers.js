@@ -15,13 +15,17 @@ function GetUsers() {
 
   return (
     <div>
-      <h2>Users</h2>
-      {users.map((user) => {
+      <h2>USERS LIST</h2>
+      {users?.map((user) => {
         return (
           <div key={user.id}>
-            <p>{user.name}</p>
-            <p>{user.email}</p>
-            <p>{user.phone}</p>
+            <div className="container-wrap">
+              <p>{user.name}</p>
+              <p>{user.email}</p>
+              <p>{user.phone}</p>
+            </div>
+            <button>Delete</button>
+            <hr />
           </div>
         );
       })}
