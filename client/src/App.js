@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import DisplayData from "./components/DisplayData";
 import GetUsers from "./components/GetUsers";

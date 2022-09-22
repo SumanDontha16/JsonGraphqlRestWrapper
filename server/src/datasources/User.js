@@ -19,12 +19,13 @@ class User {
 
   async createUser(input) {
     const response = await this.api.post("/users", input);
-    console.log(response.data);
     return response.data || [];
   }
 
   async updateUser(id, input) {
-    const response = await this.api.put(`/users/${id}`, input);
+    const response = await this.api.patch(`/users/${id}`, input);
+    console.log(id, input);
+     console.log(response.data);
     return response.data || [];
   }
 

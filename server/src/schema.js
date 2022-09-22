@@ -15,7 +15,7 @@ const typeDefs = gql`
   }
 
   type User {
-    id: Int
+    id: ID
     name: String
     email: String
     phone: String
@@ -28,7 +28,7 @@ const typeDefs = gql`
   }
 
   input UpdateUserInput {
-    id: Int
+    id: ID
     name: String
     email: String
   }

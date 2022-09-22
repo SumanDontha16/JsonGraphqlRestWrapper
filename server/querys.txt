@@ -27,7 +27,7 @@ mutation UpdateUserName($updateUserNameInput2: UpdateUserInput) {
     id
     name
     email
-  }
+  }n
 }
 
 mutation($deleteUserId: ID!) {

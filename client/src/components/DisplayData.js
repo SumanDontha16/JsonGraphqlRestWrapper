@@ -11,15 +11,11 @@ function DisplayData() {
   return (
     <div>
       <h2>ALBUMS LIST</h2>
-      {data?.albums.map((album) => {
-        return (
-          <div key={album.id}>
-            <div className="container-wrap">
-              <p>{album.title}</p>
-            </div>
-          </div>
-        );
-      })}
+      {data.albums.map((album) => (
+        <div key={album.id}>
+          <p>{album.title}</p>
+        </div>
+      ))}
     </div>
   );
 }
