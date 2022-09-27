@@ -1,30 +1,6 @@
 {
   "users": [
     {
-      "id": 2,
-      "name": "Jane Doe",
-      "email": "janedoe@gmail.com",
-      "phone": "0987654321",
-      "address": {
-        "street": "456 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001"
-      }
-    },
-    {
-      "id": 3,
-      "name": "updated3",
-      "email": "updated@gmail.com",
-      "phone": "1234567890",
-      "address": {
-        "street": "123 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001"
-      }
-    },
-    {
       "id": 4,
       "name": "Jane Smith",
       "email": "janesmith@gmail.com",
@@ -35,12 +11,6 @@
         "state": "NY",
         "zip": "10001"
       }
-    },
-    {
-      "name": "Suman",
-      "email": "suman@yahoo.co.in",
-      "phone": "12123213434",
-      "id": 7
     },
     {
       "name": "Terry",
@@ -59,6 +29,12 @@
       "email": "rshawe2@51.la",
       "phone": "+63 739 292 7942",
       "id": 10
+    },
+    {
+      "name": "John Doe",
+      "email": "johndoe@gmail.com",
+      "phone": "+1 23423423 55",
+      "id": 11
     }
   ]
 }
