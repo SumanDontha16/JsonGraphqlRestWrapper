@@ -28,7 +28,12 @@ const GetUsers = () => {
           <p>{user.name}</p>
           <p>{user.email}</p>
           <p>{user.phone}</p>
-          <button onClick={() => removeUser(user.id)}>Delete</button>
+          <button
+            onClick={() => removeUser(user.id)}
+            className="btn-delete-user"
+          >
+            Delete
+          </button>
         </div>
       ))}
     </div>

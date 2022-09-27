@@ -35,6 +35,24 @@
       "email": "johndoe@gmail.com",
       "phone": "+1 23423423 55",
       "id": 11
+    },
+    {
+      "name": "Suman Dontha",
+      "email": "dontha.suman@gmail.com",
+      "phone": "+44 07459783077",
+      "id": 12
+    },
+    {
+      "name": "Lithik Dontha",
+      "email": "lithik.dontha@gmail.com",
+      "phone": "+44 12345678",
+      "id": 13
+    },
+    {
+      "name": "Create test user",
+      "email": "create.test.user@test.com",
+      "phone": "3473678263",
+      "id": 14
     }
   ]
 }

@@ -7,8 +7,15 @@
 
 .container {
   margin: 5rem;
-
 }
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
 .container-wrap {
   display: flex;
   flex-direction: column;
@@ -17,9 +24,33 @@
   padding: 1rem 0rem;
 }
 
-button {
-  padding: 0.3rem;
-  width: 4rem;
+.btn-create-user{
+  background-color: #2f9734;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-delete-user {
+  background-color: #f44336;
+  border: none;
+ border-radius: 4px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 5rem;
 }
 
 .left-container{

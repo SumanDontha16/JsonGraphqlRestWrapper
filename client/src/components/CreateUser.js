@@ -33,13 +33,30 @@ const CreateUser = () => {
     <>
       <h2>CREATE USER</h2>
       <form onSubmit={handleCreateUser}>
-        <label htmlFor="name">Name</label>
         <input
           type="text"
           name="name"
           value={user.name}
+          placeholder="Enter name"
           onChange={(e) => setUser({ ...user, name: e.target.value })}
         />
+        <input
+          type="text"
+          name="email"
+          value={user.email}
+          placeholder="Enter email"
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
+        />
+        <input
+          type="text"
+          name="phone"
+          value={user.phone}
+          placeholder="Enter phone number"
+          onChange={(e) => setUser({ ...user, phone: e.target.value })}
+        />
+        <button type="submit" className="btn-create-user">
+          Create User
+        </button>
       </form>
     </>
   );

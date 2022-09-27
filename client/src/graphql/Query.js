@@ -1,4 +1,5 @@
-import { gql } from "@apollo/client";
+//import { gql } from "@apollo/client";
+import gql from "graphql-tag";
 
 export const LOAD_USERS = gql`
   query GetAllUsers {

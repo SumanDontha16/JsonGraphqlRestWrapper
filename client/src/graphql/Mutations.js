@@ -1,5 +1,5 @@
-import { gql } from "@apollo/client";
-
+//import { gql } from "@apollo/client";
+import gql from "graphql-tag";
 // Create User
 export const CREATE_USER = gql`
   mutation CreateUser($input: CreateUserInput) {
