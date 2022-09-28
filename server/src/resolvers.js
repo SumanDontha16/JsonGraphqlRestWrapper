@@ -19,8 +19,6 @@ module.exports = {
       return dataSources.userAPI.createUser(input);
     },
     updateUserName: async (_, args, { dataSources }) => {
-      console.log("id: ", args.id);
-      console.log("input: ", args.input);
       return dataSources.userAPI.updateUser(args.input.id, args.input);
     },
     deleteUser: async (_, { id }, { dataSources }) => {
