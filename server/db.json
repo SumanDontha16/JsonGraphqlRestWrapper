@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 4,
-      "name": "Jane Smith",
-      "email": "janesmith@gmail.com",
+      "name": "updated user",
+      "email": "updateuser@gmail.com",
       "phone": "0987654321",
       "address": {
         "street": "456 Main St",
@@ -59,6 +59,12 @@
       "email": "Lucio_Hettinger@annie.ca",
       "phone": "(254) 954-1289",
       "id": 17
+    },
+    {
+      "name": "test updated",
+      "email": "testupdated@gmail.com",
+      "phone": "78368759809",
+      "id": 18
     }
   ]
 }

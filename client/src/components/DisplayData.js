@@ -6,7 +6,7 @@ const DisplayData = () => {
     const { loading, error, data: {albums} = [] } = useQuery(GET_ALL_ALBUMS);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+  if (error) return <p>Error: {error.message }</p>;
 
   return (
     <div>
