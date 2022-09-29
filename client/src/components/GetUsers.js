@@ -4,12 +4,12 @@ import { DELETE_USER } from "../graphql/Mutations";
 import { useQuery } from "@apollo/client";
 import { LOAD_USERS } from "../graphql/Query";
 
-const GetUsers = () => {
+export const GetUsers = () => {
   const { loading, error, data: { users } = [] } = useQuery(LOAD_USERS);
   const [deleteUser] = useMutation(DELETE_USER);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message }</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   const removeUser = (deleteUserId) => {
     deleteUser({
@@ -34,10 +34,9 @@ const GetUsers = () => {
           >
             Delete
           </button>
+          <button className="btn-update-user">Update</button>
         </div>
       ))}
     </div>
   );
 };
-
-export default GetUsers;
