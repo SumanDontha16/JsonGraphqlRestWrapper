@@ -9,7 +9,7 @@ export const GetUsers = () => {
   const [deleteUser] = useMutation(DELETE_USER);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <p>Error!</p>;
 
   const removeUser = (deleteUserId) => {
     deleteUser({

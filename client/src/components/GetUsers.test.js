@@ -33,4 +33,34 @@ describe("GetUsers component", () => {
     );
     expect(screen.getByText("Loading...")).toBeInTheDocument();
   });
+
+  it("renders users", async () => { 
+    render(
+      <MockedProvider mocks={mocks} addTypename={false}>
+        <GetUsers />
+      </MockedProvider>
+    );
+
+    expect(await screen.findByText("John Doe")).toBeInTheDocument();
+  });
+
+  it("renders error state", async () => { 
+    const errorMocks = [
+      {
+        request: {
+          query: LOAD_USERS,
+        },
+        error: new Error("An error occurred"),
+      },
+    ];
+
+    render(
+      <MockedProvider mocks={errorMocks} addTypename={false}>
+        <GetUsers />
+      </MockedProvider>
+    );
+
+    expect(await screen.findByText("Error!")).toBeInTheDocument();
+  });
+
 });
