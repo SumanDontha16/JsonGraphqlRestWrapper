@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import CreateUser from "./components/CreateUser";
-import DisplayData from "./components/DisplayData";
+import {DisplayData} from "./components/DisplayData";
 import { GetUsers } from "./components/GetUsers";
 
 function App() {

@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_ALBUMS } from "../graphql/Query";
 
-const DisplayData = () => {
+export const DisplayData = () => {
     const { loading, error, data: {albums} = [] } = useQuery(GET_ALL_ALBUMS);
 
   if (loading) return <p>Loading...</p>;
@@ -20,4 +20,3 @@ const DisplayData = () => {
   );
  }
 
-export default DisplayData;
